@@ -538,6 +538,112 @@
             line-height: 1.6;
         }
 
+        /* =====================================
+        EVENT DATE & TIME HIGHLIGHT
+        ===================================== */
+
+        .event-details--schedule {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            width: 100%;
+            margin-top: 8px;
+            padding: 17px;
+
+            background: linear-gradient(
+                135deg,
+                #f8edf1,
+                #f0ebf7
+            );
+
+            border: 1px solid #e6d6e4;
+            border-radius: 14px;
+        }
+
+        /* Schedule heading */
+
+        .schedule-heading {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            color: #674e70;
+
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+        }
+
+        .schedule-icon {
+            font-size: 1.2rem;
+            color: #946c89;
+        }
+
+        /* Date and time layout */
+
+        .schedule-content {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 12px;
+        }
+
+        /* Each information item */
+
+        .schedule-item {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            min-width: 0;
+            padding: 11px 12px;
+
+            background: rgba(255, 255, 255, .65);
+
+            border: 1px solid rgba(255, 255, 255, .8);
+            border-radius: 10px;
+        }
+
+        .schedule-item span {
+            color: #725f78;
+
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+        }
+
+        .schedule-item strong {
+            color: #55405f;
+
+            font-size: 1.12rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 380px) {
+            .event-details--schedule {
+                padding: 13px;
+            }
+
+            .schedule-content {
+                gap: 8px;
+            }
+
+            .schedule-item {
+                padding: 10px 8px;
+            }
+
+            .schedule-item strong {
+                font-size: .98rem;
+            }
+
+            .schedule-item span {
+                font-size: .65rem;
+            }
+        }
+
         .map-link {
             display: inline-flex;
             align-items: center;
@@ -945,8 +1051,7 @@
             <p class="eyebrow">A special day is coming</p>
             <h1>Một cột mốc đáng nhớ</h1>
             <p class="intro">
-                Có những khoảnh khắc sẽ trở nên trọn vẹn hơn
-                khi được chia sẻ cùng những người thân quý.
+                Có những khoảnh khắc sẽ trở nên trọn vẹn hơn khi được chia sẻ cùng những người thân quý.
             </p>
         </header>
 
@@ -1017,10 +1122,22 @@
                             Thành phố Hồ Chí Minh
                         </p>
 
-                        <div class="event-details">
-                            <div class="event-detail">
-                                <span>Ngày và thời gian</span>
-                                <strong>8 giờ 30 phút &nbsp; · &nbsp; Ngày 30/11/2026</strong>
+                        <div class="event-details event-details--schedule">
+
+                            <div class="schedule-heading">
+                                <span class="schedule-icon">▦</span>
+                                NGÀY VÀ THỜI GIAN
+                            </div>
+
+                            <div class="schedule-content">
+                                <div class="schedule-item">
+                                    <span>NGÀY TỔ CHỨC</span>
+                                    <strong>30/11/2026</strong>
+                                </div>
+                                <div class="schedule-item">
+                                    <span>THỜI GIAN</span>
+                                    <strong>08:30</strong>
+                                </div>
                             </div>
                         </div>
 
