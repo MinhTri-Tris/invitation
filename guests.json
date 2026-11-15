@@ -18,4 +18,24 @@
     "hoang-tu": {
         "guestName": "Hoàng Tú"
     },
+
+   "ngoc-linh": {
+        "guestName": "Ngọc Linh"
+    },
+
+   "thao-nguyen": {
+        "guestName": "Thảo Nguyên"
+    },
+
+   "thi-hien": {
+        "guestName": "Thị Hiền"
+    },
+
+   "ngoc-trung": {
+        "guestName": "Ngọc Trung"
+    },
+
+   "minh-phuc": {
+        "guestName": "Minh Phúc"
+    },
 }
