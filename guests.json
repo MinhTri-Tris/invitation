@@ -9,5 +9,13 @@
     
     "tuan-kiet": {
         "guestName": "Tuấn Kiệt"
-    }
+    },
+    
+    "thanh-truc": {
+        "guestName": "Thanh Trúc"
+    },
+
+    "hoang-tu": {
+        "guestName": "Hoàng Tú"
+    },
 }
