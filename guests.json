@@ -74,7 +74,11 @@
    "khanh-huy": {
         "guestName": "Khánh Huy"
     },
-
+    
+   "gia-bao": {
+        "guestName": "Gia Bảo"
+    },
+    
    "minh-phuc": {
         "guestName": "Minh Phúc"
     }
